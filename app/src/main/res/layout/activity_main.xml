@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STUDENT INFO"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp" />
+
+
+    <EditText
+        android:inputType="textPersonName"
+        android:hint="Enter name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:hint="Enter age"
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:hint="Enter Address"
+        android:id="@+id/editTextText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:hint="Enter phone no :"
+        android:id="@+id/editTextText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Gender : "
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Female" />
+    </RadioGroup>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+      <Button
+          android:layout_marginRight="20dp"
+          android:layout_weight="1"
+          android:id="@+id/button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Save" />
+
+    <Button
+          android:layout_marginLeft="20dp"
+          android:layout_weight="1"
+          android:id="@+id/button2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Clear" />
+
+</LinearLayout>
+
+
+
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"
+        />
+
+
+
+</LinearLayout>
