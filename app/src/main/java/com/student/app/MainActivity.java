@@ -63,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
                             String s = "Name : "+name+"\nAge : "+age+"\nAddress : "+address+"\nPhone no : "+phone+"\nGender : "+rb.getText()+"\n";
                             list.add(s);
                             listView.setAdapter(adapter);
+                            edt1.setText("");
+                            edt2.setText("");
+                            edt3.setText("");
+                            edt4.setText("");
+                            rg1.clearCheck();
                         }catch (Exception e){
                             Toast.makeText(getApplicationContext(),"NULL",Toast.LENGTH_LONG).show();
                         }
@@ -71,11 +76,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
-                edt1.setText("");
-                edt2.setText("");
-                edt3.setText("");
-                edt4.setText("");
-                rb.setChecked(false);
+
+
             }
         });
 
@@ -84,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 list.clear();
+
                 listView.setAdapter(adapter);
             }
         });
